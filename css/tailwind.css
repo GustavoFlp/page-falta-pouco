@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Geral */
+.container {
+  @apply container mx-auto px-8;
+}
+.section {
+  @apply py-16;
+}
+.p {
+  @apply text-xl mb-5;
+}
+.btn {
+  @apply py-1 px-6;
+}
+/* Institucional */
+/* ID */
+.header_banner {
+  min-height: 90vh;
+  @apply grid items-center;
+}
+.large_title {
+  @apply text-4xl lg:text-5xl xl:text-6xl;
+}
+.medium_title {
+  @apply text-3xl;
+}
+.h3 {
+  @apply text-3xl xl:text-4xl mb-8;
+}
+.root {
+  @apply text-white bg-gray-1000;
+}
+.btn-institucional {
+  @apply border-2 border-white font-bold;
+}
+
+.navegacao {
+  @apply min-h-screen bg-black grid justify-center items-center relative text-white;
+}
+.nav_menu {
+  height: 80%;
+  @apply absolute z-30 top-0 bottom-0 left-8 grid items-center my-auto border-l border-yellow-100;
+}
+.nav_menu_ul {
+  @apply grid h-full pl-6 content-around;
+}
+.nav_menu_li {
+  @apply transform transition-all duration-100 hover:scale-125 cursor-pointer;
+}
+.slide_list {
+  @apply pt-4 pr-1 border-b border-white flex justify-between items-center;
+}
+
+/* Cards */
+.choice_card {
+  @apply bg-blue-900 py-8 px-2;
+}
+
+/* LinkThree */
+.flowthree_banner {
+  @apply bg-gray-800 bg-center bg-cover;
+}
+.flowthree_avatar {
+  @apply w-7/12 lg:w-4/12 mx-auto;
+}
+.flowthree_ul {
+  @apply grid grid-cols-1;
+}
+.flowthree_li {
+  @apply mt-4 w-full py-4 bg-yellow-200 hover:bg-yellow-600 transition-all duration-200 text-center text-white rounded;
+}
+.flowthree_li.suporte {
+  @apply mt-4 w-full py-4 bg-gray-900 border-2 border-gray-900 hover:border-yellow-600 hover:text-yellow-600 transition-all duration-200 text-center text-white rounded;
+}
